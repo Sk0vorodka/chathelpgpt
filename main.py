@@ -9,7 +9,7 @@ import os
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 GPT_API_URL = "https://api.koompi.dev/v1/chat/completions"
 
-bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+bot = Bot(token=BOT_TOKEN, parse_mode=ParseMode.HTML)
 dp = Dispatcher()
 logging.basicConfig(level=logging.INFO)
 
